@@ -1,0 +1,216 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+}
+body {
+  max-width: 1440px;
+  background-color: hsl(0, 0%, 100%);
+  height: 100hv;
+  width: -webkit-fit-content;
+  width: fit-content;
+  font-family: "League Spartan", sans-serif;
+  background: url(../images/bg-pattern-top-desktop.svg) left top no-repeat,
+    url(../images/bg-pattern-bottom-desktop.svg) bottom right no-repeat;
+  margin: 0 auto;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  row-gap: 1rem;
+  margin: 6rem 6rem 1rem;
+}
+
+.section1 {
+  display: grid;
+  grid-template-columns: 0.77fr 0.5fr;
+  grid-template-rows: auto;
+}
+.section1 .update h1 {
+  color: hsl(300, 43%, 22%);
+  max-width: 25rem;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.section1 .update .body-paragraph {
+  font-size: 0.9rem;
+  max-width: 22rem;
+  color: hsl(303, 10%, 53%);
+  margin-top: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+.section1 .star-rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-box-orient: vertical;
+  margin-top: 1.5rem;
+}
+.section1 .star-rating .review {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+.section1 .star-rating .guru {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+.section1 .star-rating .bestTech {
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+}
+.section1 .star-rating .review,
+.guru,
+.bestTech {
+  padding: 0.7rem;
+  margin: 0.4rem;
+  border-radius: 0.3rem;
+  max-width: 28rem;
+  background-color: hsl(300, 24%, 96%);
+  color: hsl(300, 43%, 22%);
+  font-weight: 900;
+  font-size: 0.9rem;
+}
+.section1 .star-rating span {
+  margin-left: 1rem;
+}
+
+.user-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  height: 15rem;
+}
+
+.user-details .colton-smith {
+  -ms-flex-item-align: start;
+  -ms-grid-row-align: start;
+  align-self: flex-start;
+}
+.user-details .irene-roberts {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+.user-details .anne-wallace {
+  -ms-flex-item-align: end;
+  -ms-grid-row-align: end;
+  align-self: flex-end;
+}
+
+.user-details .colton-smith,
+.irene-roberts,
+.anne-wallace {
+  background-color: hsl(300, 43%, 22%);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  width: 18rem;
+}
+
+.user-details .colton-image-name,
+.irene-image-name,
+.anne-image-name {
+  display: flex;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+}
+.user-details img {
+  width: auto;
+  border-radius: 50rem;
+  height: 3rem;
+  margin-right: 1rem;
+}
+.user-details h2 {
+  color: hsl(0, 0%, 100%);
+  font-size: 1rem;
+}
+.user-details .colton-verified,
+.irene-verified,
+.anne-verified {
+  color: hsl(333, 80%, 67%);
+  font-size: 0.8rem;
+  margin-top: 0.2rem;
+}
+.user-details .colton-paragraph,
+.irene-paragraph,
+.anne-paragrapg {
+  color: hsl(0, 0%, 100%);
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  line-height: 1.2rem;
+}
+.attribution {
+  font-size: 15px;
+  text-align: center;
+  padding: 1rem;
+  color: hsl(303, 10%, 53%);
+}
+.attribution a {
+  color: hsl(228, 81%, 35%);
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color: url(../images/bg-pattern-top-mobile.svg) left top
+        no-repeat,
+      url(../images/bg-pattern-bottom-mobile.svg) bottom right no-repeat;
+  }
+  .container {
+    margin: 5rem 3rem 1rem;
+  }
+  .container .section1 {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    row-gap: 0.5rem;
+    text-align: center;
+  }
+  .container .section1 .update h1 {
+    font-size: 2rem;
+    width: auto;
+  }
+  .container .section1 .update p {
+    font-size: 1rem;
+    width: auto;
+    margin-bottom: -0.5rem;
+  }
+  .container .section1 .star-rating .review,
+  .container .section1 .star-rating .guru,
+  .container .section1 .star-rating .bestTech {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    width: 100%;
+  }
+  .container .section1 .star-rating span {
+    display: block;
+    padding-top: 0.5rem;
+    margin-left: 0;
+  }
+  .container .user-details {
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .container .user-details .colton-smith,
+  .container .user-details .irene-roberts,
+  .container .user-details .anne-wallace {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    width: 100%;
+  }
+}
