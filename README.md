@@ -1,5 +1,7 @@
 # Frontend Mentor - Social proof section design
 
+![Design preview for the social-proof-section coding challenge](./design/desktop-preview.jpg)
+
 This is a solution to the [Social proof section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA).
 
 This challenge has helped me improve my coding skills by building a realistic project.
